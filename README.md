@@ -1,38 +1,34 @@
-Sistema Bancario de Microservicios con Java 21 y Spring Boot
+ Sistema Bancario con Microservicios
 
-Proyecto de microservicios para un sistema bancario básico usando Java 21, Spring Boot y PostgreSQL.
+Este proyecto es una aplicación bancaria distribuida basada en una arquitectura de microservicios, diseñada para manejar de forma eficiente y segura la gestión de cuentas y transacciones bancarias.
 
+Características principales:
 
+Microservicios independientes:
+La aplicación está dividida en dos servicios principales:
 
-La aplicación está compuesta por dos microservicios principales que trabajan juntos para gestionar cuentas bancarias y sus transacciones:
+Cuenta Service: Gestiona las cuentas bancarias, permitiendo operaciones como creación y consulta de saldos.
 
-Cuenta Service
+Transacciones Service: Administra todas las transacciones (depósitos, retiros, transferencias) asociadas a las cuentas.
 
-Permite crear cuentas bancarias para clientes.
+Persistencia con PostgreSQL:
+Cada microservicio utiliza su propia base de datos PostgreSQL, garantizando la independencia y escalabilidad.
 
-Permite consultar la información de una cuenta, como el saldo disponible.
+Despliegue con Docker:
+Toda la aplicación, incluyendo los servicios y las bases de datos, se empaqueta en contenedores Docker. Esto asegura portabilidad y facilita el despliegue en cualquier entorno compatible con Docker sin necesidad de instalaciones adicionales.
 
-Permite realizar depósitos y retiros de dinero en las cuentas.
+Comunicación desacoplada:
+Los microservicios pueden comunicarse mediante APIs REST, lo que facilita la escalabilidad y el mantenimiento.
 
-Transacciones Service
+Configuración segura:
+Las credenciales y configuraciones sensibles se manejan mediante variables de entorno, evitando exponer datos confidenciales en el código o repositorios públicos.
 
-Registra todas las operaciones realizadas en las cuentas, como depósitos y retiros.
+Beneficios del proyecto:
 
-Permite consultar el historial de transacciones de una o todas las cuentas.
+Escalabilidad: Cada microservicio puede escalar independientemente según la demanda.
 
+Mantenibilidad: La separación clara de responsabilidades facilita el desarrollo y mantenimiento continuo.
 
-Requisitos previos
+Portabilidad: Gracias a Docker, la aplicación puede desplegarse rápida y consistentemente en cualquier máquina o servidor.
 
-Tener instalado Java 21 (o la versión que usaste para el proyecto).
-
-Tener instalado Maven (para construir el proyecto).
-
-Tener instalado y corriendo PostgreSQL (o puedes cambiar la configuración a otra base de datos).
-
-Configurar la base de datos con:
-
-Nombre: banco_db
-
-Usuario: (por ejemplo) postgres
-
-Contraseña: (la que uses en tu configuración)
+Seguridad: Buenas prácticas para manejo de credenciales y configuración.
