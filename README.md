@@ -19,3 +19,20 @@ Transacciones Service
 Registra todas las operaciones realizadas en las cuentas, como depósitos y retiros.
 
 Permite consultar el historial de transacciones de una o todas las cuentas.
+
+
+Requisitos previos
+
+Tener instalado Java 21 (o la versión que usaste para el proyecto).
+
+Tener instalado Maven (para construir el proyecto).
+
+Tener instalado y corriendo PostgreSQL (o puedes cambiar la configuración a otra base de datos).
+
+Configurar la base de datos con:
+
+Nombre: banco_db
+
+Usuario: (por ejemplo) postgres
+
+Contraseña: (la que uses en tu configuración)
