@@ -2,19 +2,7 @@ Sistema Bancario de Microservicios con Java 21 y Spring Boot
 
 Proyecto de microservicios para un sistema bancario básico usando Java 21, Spring Boot y PostgreSQL.
 
-🚀 Tecnologías
 
-Java 21
-
-Spring Boot 3.x
-
-Spring Data JPA y Hibernate
-
-PostgreSQL 15
-
-OpenFeign
-
-Maven
 
 La aplicación está compuesta por dos microservicios principales que trabajan juntos para gestionar cuentas bancarias y sus transacciones:
 
