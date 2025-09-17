@@ -21,7 +21,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/banco_db
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: 86042332
+      SPRING_DATASOURCE_PASSWORD: 
       SERVER_PORT: 8081
     depends_on:
       - db
